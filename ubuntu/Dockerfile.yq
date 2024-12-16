@@ -1,6 +1,7 @@
 FROM ubuntu:18.04
 RUN apt update && apt install -y git wget bash
 RUN wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq && \
-    chmod +x /usr/local/bin/yq
+     chmod +x /usr/local/bin/yq
+ 
 RUN ln -sf /bin/bash /bin/sh
 CMD ["/bin/bash"]
